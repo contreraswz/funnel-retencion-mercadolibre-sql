@@ -33,7 +33,7 @@ Mapear el embudo de conversión completo de 7 etapas para **MercadoLibre** (desd
   Comportamiento Regional: La caída en add_to_cart se mantiene homogénea en la mayoría de los mercados ($75\% - 80\%$ de abandono).
   Casos Atípicos Exitosos: Uruguay y Bolivia presentan un desempeño extraordinario del $100\%$ de efectividad constante en las fases finales del flujo (begin_checkout $\rightarrow$ add_shipping_info $\rightarrow$ add_payment_info $\rightarrow$ purchase).
   Anomalía Técnica: En Paraguay, tras el paso add_to_cart, el porcentaje de conversión cae a $0\%$, lo que sugiere un fallo técnico/operativo o un bloqueo en la integración del carrito hacia el checkout.
-![Embudo General](docs/assets/embudo_pais.png)
+![Embudo País](docs/assets/embudo_pais.png)
 
 3. Matriz de Retención por Cohorte de Registro (D7 - D28)
    Comportamiento Histórico (Enero - Julio 2025): Muestra un compromiso inicial muy sólido que se degrada drásticamente hacia el final del mes:
@@ -42,13 +42,13 @@ Mapear el embudo de conversión completo de 7 etapas para **MercadoLibre** (desd
      Día 21 (D21): $25.1\%$ (Punto de fuga crítico).
      Día 28 (D28): $2.7\%$ (Lealtad residual).
    Anomalía en Cohorte 2025-08: Se registra un colapso en el engagement desde la entrada; la retención a D7 cae al $70.8\%$ (un $15\%$ a $25\%$ menos que el promedio histórico) y se desploma a $0.2\%$ en D28.
-   ![Retención Cohorte](docs/assets/retencion_cohorte_.png)
+   ![Retención Cohorte](docs/assets/retencion_cohorte.png)
 
 4. Curvas de Retención Longitudinal por Mercado/País
    Mercados Eficientes: México ($3.1\%$) y Perú ($3.2\%$) lideran en retención residual a D28.
    Mercados Ineficientes: Colombia y Chile retienen únicamente el $1.9\%$ al final del mes.
    Fuga Acelerada en Uruguay: Aunque presenta excelente retención inicial en D7 ($86.1\%$), pierde a más de la mitad de sus usuarios activos hacia D14.
-   ![Retención Cohorte](docs/assets/retencion_pais_.png)
+   ![Retención Cohorte](docs/assets/retencion_pais.png)
    
 ---
 
