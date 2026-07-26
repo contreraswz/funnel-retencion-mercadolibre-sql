@@ -33,7 +33,7 @@ Mapear el embudo de conversión completo de 7 etapas para **MercadoLibre** (desd
   Comportamiento Regional: La caída en add_to_cart se mantiene homogénea en la mayoría de los mercados ($75\% - 80\%$ de abandono).
   Casos Atípicos Exitosos: Uruguay y Bolivia presentan un desempeño extraordinario del $100\%$ de efectividad constante en las fases finales del flujo (begin_checkout $\rightarrow$ add_shipping_info $\rightarrow$ add_payment_info $\rightarrow$ purchase).
   Anomalía Técnica: En Paraguay, tras el paso add_to_cart, el porcentaje de conversión cae a $0\%$, lo que sugiere un fallo técnico/operativo o un bloqueo en la integración del carrito hacia el checkout.
-![Embudo País](docs/assets/embudo_pais.png)
+![Embudo País](docs/assets/Embudo_pais.png)
 
 3. Matriz de Retención por Cohorte de Registro (D7 - D28)
    Comportamiento Histórico (Enero - Julio 2025): Muestra un compromiso inicial muy sólido que se degrada drásticamente hacia el final del mes:
@@ -42,7 +42,7 @@ Mapear el embudo de conversión completo de 7 etapas para **MercadoLibre** (desd
      Día 21 (D21): $25.1\%$ (Punto de fuga crítico).
      Día 28 (D28): $2.7\%$ (Lealtad residual).
    Anomalía en Cohorte 2025-08: Se registra un colapso en el engagement desde la entrada; la retención a D7 cae al $70.8\%$ (un $15\%$ a $25\%$ menos que el promedio histórico) y se desploma a $0.2\%$ en D28.
-   ![Retención Cohorte](docs/assets/retencion_cohorte.png)
+   ![Retención Cohorte](docs/assets/rentencion_cohorte.png)
 
 4. Curvas de Retención Longitudinal por Mercado/País
    Mercados Eficientes: México ($3.1\%$) y Perú ($3.2\%$) lideran en retención residual a D28.
@@ -52,16 +52,19 @@ Mapear el embudo de conversión completo de 7 etapas para **MercadoLibre** (desd
    
 ---
 
-💡 Recomendaciones Estratégicas y de Producto
-🛍️ Optimización de Ficha de Producto (select_item $\rightarrow$ add_to_cart):
+##💡 Recomendaciones Estratégicas y de Producto
+1.🛍️ Optimización de Ficha de Producto (select_item $\rightarrow$ add_to_cart):
   Realizar auditorías de UX/UI en el botón de compra/carrito.
   Revisar transparencia en costos de envío, disponibilidad de stock y visibilidad de valoraciones/reseñas para reducir la fricción antes de la decisión de compra.
-🚨 Intervención Técnica Urgente en Paraguay e IT Audit en Cohorte 08:
+
+2.🚨 Intervención Técnica Urgente en Paraguay e IT Audit en Cohorte 08:
   Paraguay: Enviar reporte técnico prioritario a los equipos de IT/Logística para resolver la interrupción que impide a los usuarios avanzar desde el carrito hacia el checkout.
   Cohorte Agosto 2025: Investigar cambios recientes en despliegues de software (releases), campañas de adquisición de tráfico de baja calidad o fallos de infraestructura ocurridos durante dicho periodo.
-🔁 Estrategia de Re-engagement antes del Día 21:
+
+3. 🔁 Estrategia de Re-engagement antes del Día 21:
   Diseñar campañas automatizadas (Push Notifications, Email Marketing personalizado, cupones de recompra) entre el D14 y D21 para reactivar el interés del usuario antes de que caiga al nivel de retención residual del D28.
-🌎 Replicación de Prácticas Regionales:
+
+4.🌎 Replicación de Prácticas Regionales:
   Estudiar los factores que impulsan la efectividad del checkout en Uruguay y Bolivia para replicar sus flujos simplificados en mercados con menor conversión.
 
 ---
